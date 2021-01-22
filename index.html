@@ -8,6 +8,7 @@
       </head>
       <body> 
         <h1>Parakeet Mapbox Demo</h1>
+        <p>You can interact with this map by zooming, scrolling etc.</p>
 	<div id='map' style='width: 400px; height: 300px;'></div>
 	<script>
             // TODO: Need to check on the security implications of having the
@@ -23,5 +24,16 @@
             zoom: 10 // starting zoom https://docs.mapbox.com/help/glossary/zoom-level/
             });
         </script>
+        <h3>Notes</h3>
+        <ul>
+            <li>Snapping to Ithica is hardcoded. Arguably this is the right
+                approach so long as Parakeet only has one city.</li>
+            <li>Need to double check on security stuff for Mapbox, setup a
+                Parakeet Mapbox account etc.</li>
+            <li>Things like the zoom level, and color of the map are relatively easy to change.
+        </ul>
       </body>
+      <footer>
+        <p>Copyright &copy; Parakeet Enterprises Inc 2021 - Some Rights Reserved</p>
+      </footer>
 </html>
