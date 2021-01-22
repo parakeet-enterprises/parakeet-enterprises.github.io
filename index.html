@@ -1,7 +1,21 @@
-<html>
-
-    <h1>Parakeet</h1>
-    <p>Your guide to parks and recreation.</p>
-
-    <div class="copyright">Copyright &copy; Parakeet Enterprises Inc 2021 Some Rights Reserved</div>
+<!DOCTYPE html>
+  <html>
+    <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+      <script src='https://api.mapbox.com/mapbox-gl-js/v2.0.1/mapbox-gl.js'></script>
+      <link href='https://api.mapbox.com/mapbox-gl-js/v2.0.1/mapbox-gl.css' rel='stylesheet' />
+      <!-- <style> </style> -->
+      </head>
+      <body onload="init()"> 
+	<div id='map' style='width: 400px; height: 300px;'></div>
+	<script>
+	mapboxgl.accessToken = 'pk.eyJ1IjoiZmluZGdyaWZmaW4iLCJhIjoiY2tneTJvNXI5MHBuajMzcXhtYXc2OGphdCJ9.u-xIFG6Q3sXLLctyW7MzRQ';
+	var map = new mapboxgl.Map({
+	container: 'map',
+	style: 'mapbox://styles/mapbox/streets-v11', // stylesheet location
+	center: [-74.5, 40], // starting position [lng, lat]
+	zoom: 9 // starting zoom
+	});
+    </script>
+      </body>
 </html>
