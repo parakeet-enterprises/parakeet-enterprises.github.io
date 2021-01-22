@@ -7,14 +7,16 @@
       <!-- <style> </style> -->
       </head>
       <body onload="init()"> 
+        <h1>Parakeet Mapbox Demo</h1>
 	<div id='map' style='width: 400px; height: 300px;'></div>
 	<script>
+            // TODO: having the access token in the page like this is insecure 
 	mapboxgl.accessToken = 'pk.eyJ1IjoiZmluZGdyaWZmaW4iLCJhIjoiY2tneTJvNXI5MHBuajMzcXhtYXc2OGphdCJ9.u-xIFG6Q3sXLLctyW7MzRQ';
 	var map = new mapboxgl.Map({
 	container: 'map',
 	style: 'mapbox://styles/mapbox/streets-v11', // stylesheet location
-	center: [-74.5, 40], // starting position [lng, lat]
-	zoom: 9 // starting zoom
+	center: [76.5019, 42.4440], // starting position [lng, lat]
+	zoom: 7 // starting zoom
 	});
     </script>
       </body>
